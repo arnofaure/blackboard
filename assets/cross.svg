@@ -1,0 +1,17 @@
+<svg width="228" height="228" viewBox="0 0 228 228" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>cross</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(677 495)" figma:type="canvas">
+<g id="cross" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="translate(-667 -485)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_stroke" transform="matrix(6.12323e-17 -1 1 6.12323e-17 -667 -277)" fill="#FFFFFF" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 7.07107 -7.07107C 3.16582 -10.9763 -3.16582 -10.9763 -7.07107 -7.07107C -10.9763 -3.16582 -10.9763 3.16582 -7.07107 7.07107L 7.07107 -7.07107ZM 200.929 215.071C 204.834 218.976 211.166 218.976 215.071 215.071C 218.976 211.166 218.976 204.834 215.071 200.929L 200.929 215.071ZM -7.07107 7.07107L 200.929 215.071L 215.071 200.929L 7.07107 -7.07107L -7.07107 7.07107Z"/>
+</defs>
+</svg>

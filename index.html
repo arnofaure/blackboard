@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BlackBoard</title>
+    <meta name="description" content="A simple blackboard. to use for quick drawing or teaching.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.sound.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <script src="sketch.js"></script>
+
+    <div id="information-wrapper">
+        <h1>BLACKBOARD</h1>
+        <h2>A simple drawing board</h2>
+        <p>Very easy to use:</p>
+        <ul>
+            <li>Choose your color</li>
+            <li>Hold down the left mouse button to draw</li>
+            <li>Erase with "O"</li>
+            <li>Clean your board with "X"</li>
+        </ul>
+
+        <p>Save you artwork: right-click (or crtl+click) anywhere on the canvas and select "Save image as..." </p>
+
+        <div id="close">CLOSE</div>
+
+        <div class="notes">
+            <p>Made by <a href="https://studionora.ca" target="_blank">Arno Faure / studio NØRA</a>, you can fork it on <a href="https://github.com/arnofaure/blackboard" target="_blank">github</p></a>
+                <p>Free to use, to share, etc. / CC0 - Public Domain</p>
+        </div>
+
+
+    </div>
+
+    <ul class="chalk-wrapper">
+        <li class="chalk" id="red"></li>
+        <li class="chalk" id="orange"></li>
+        <li class="chalk" id="yellow"></li>
+        <li class="chalk" id="green"></li>
+        <li class="chalk" id="blue"></li>
+        <li class="chalk" id="purple"></li>
+        <li class="divider"></li>
+        <li class="chalk" id="eraser"></li>
+        <li class="chalk" id="erase-all"><img src="assets/cross.svg" alt="erase-all"></li>
+    </ul>
+
+    <div id="information">
+        <p>i</p>
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#close").click(function() {
+                $("#information-wrapper").toggleClass('display-none');
+            });
+            $("#information").click(function() {
+                $("#information-wrapper").toggleClass('display-none');
+            });
+        });
+    </script>
+
+
+</body>
+</html>

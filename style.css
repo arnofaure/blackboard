@@ -1,0 +1,172 @@
+html {
+    --red-color:#DC4266;
+    --orange-color:#EB9554;
+    --yellow-color:#dfd043;
+    --green-color:#6cc3a4;
+    --blue-color:#5BADD8;
+    --purple-color:#8191C9;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    cursor: crosshair;
+    font-family: sans-serif;
+}
+
+canvas {
+    position: absolute;
+    vertical-align: top;
+    z-index: -1;
+}
+
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.chalk-wrapper {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+.chalk {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    margin-bottom: 1em;
+    border: solid 5px transparent;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+#information {
+  position: absolute;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: solid 5px white;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#information p {
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.information:hover {
+  background-color: white;
+}
+
+
+.information:hover p {
+  color: black;
+}
+
+#red {
+    background-color: var(--red-color);
+}
+#orange {
+    background-color: var(--orange-color);
+}
+#yellow {
+    background-color: var(--yellow-color);
+}
+#green {
+    background-color: var(--green-color);
+}
+#blue {
+    background-color: var(--blue-color);
+}
+#purple {
+    background-color: var(--purple-color);
+}
+#eraser {
+    background-color: black;
+    border-color: white;
+}
+
+#eraser:hover {
+  background-color: grey;
+}
+
+#erase-all {
+  background-color: transparent;
+}
+
+#erase-all img {
+    width: 100%;
+}
+
+.chalk:hover {
+  border-color: white;
+}
+
+#information-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  width: 50%;
+  height: auto;
+  background-color: rgba(255,255,255,1);
+  padding: 2rem;
+  z-index: 5;
+}
+
+#information-wrapper p, li {
+font-size: 1.2rem;
+}
+
+#close {
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: solid 1px;
+}
+
+#close:hover {
+  color: white;
+  background-color: black;
+}
+
+.notes {
+  margin-top: 1em;
+  padding-top: 10px;
+  border-top: solid 1px grey;
+}
+
+.notes p {
+  font-size: .8rem !important;
+  line-height: .7em;
+}
+
+.display-none {
+  display: none;
+}
