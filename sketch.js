@@ -62,18 +62,20 @@ function mouseDragged() {
 }
 
 function touchMoved() {
-  if ((mouseX > palettesize * 2.5) && (mouseIsPressed)) {
+  // if ((mouseX > palettesize * 2.5) && (mouseIsPressed)) {
     if (!eraseOn) {
       strokeJoin(ROUND)
       strokeCap(ROUND)
       strokeWeight(4)
-      line(pmouseX, pmouseY, mouseX, mouseY);
+      line(mouseX, mouseY, pmouseX, pmouseY);
+      return false;
     } else {
       fill(0, 0, 0, 100);
       noStroke();
       ellipse(mouseX, mouseY, 100, 100);
+      return false;
     }
-  }
+  // }
 }
 
 
