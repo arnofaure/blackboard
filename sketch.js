@@ -44,14 +44,15 @@ function setup() {
 }
 
 function draw() {
-  // background(0);
+}
 
+function mouseDragged() {
   if ((mouseX > palettesize * 2.5) && (mouseIsPressed)) {
     if (!eraseOn) {
       strokeJoin(ROUND)
       strokeCap(ROUND)
       strokeWeight(4)
-      line(mouseX, mouseY, pmouseX, pmouseY);
+      line(pmouseX, pmouseY, mouseX, mouseY);
     } else {
       fill(0, 0, 0, 100);
       noStroke();
