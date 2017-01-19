@@ -19,6 +19,9 @@ canvas {
     position: absolute;
     vertical-align: top;
     z-index: -1;
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 h1, h2 {
