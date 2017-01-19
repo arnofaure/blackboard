@@ -67,6 +67,7 @@ h1, h2 {
   border-radius: 100%;
   border: solid 5px white;
   z-index: 10;
+  background-color: black;
   cursor: pointer;
 }
 
@@ -76,12 +77,12 @@ h1, h2 {
   height: 100%;
 }
 
-.information:hover {
+#information:hover {
   background-color: white;
 }
 
 
-.information:hover p {
+#information:hover p {
   color: black;
 }
 
