@@ -1,12 +1,12 @@
 var palettesize = 55;
 var platetteGutter;
 
-var redChalk, orangeChalk, yellowChalk, greenChalk, blueChalk, purpleChalk;
+var redChalk, orangeChalk, yellowChalk, greenChalk, blueChalk, purpleChalk, whiteChalk;
 var eraser;
 var eraseAll;
 var eraseOn = false;
 
-var colorChalk = ["#DC4266", "#EB9554", "#D5C561", "#86C0AB", "#5BADD8", "#8191C9"]
+var colorChalk = ["#DC4266", "#EB9554", "#D5C561", "#86C0AB", "#5BADD8", "#8191C9", "#FFFFFF"]
 
 
 
@@ -18,7 +18,10 @@ function setup() {
   strokeJoin(ROUND)
   strokeCap(ROUND)
 
-  stroke(colorChalk[0]);
+  stroke(colorChalk[6]);
+
+  whiteChalk = select('#white');
+  whiteChalk.mousePressed(whiteColor);
 
   redChalk = select('#red');
   redChalk.mousePressed(redColor);
@@ -76,6 +79,10 @@ function touchMoved() {
   // }
 }
 
+function whiteColor() {
+  eraseOn = false;
+  stroke(colorChalk[6]);
+}
 
 function redColor() {
   eraseOn = false;

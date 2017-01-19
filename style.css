@@ -91,6 +91,10 @@ h1, h2 {
   color: black;
 }
 
+#white {
+  background-color: white;
+}
+
 #red {
     background-color: var(--red-color);
 }
@@ -114,9 +118,6 @@ h1, h2 {
     border-color: white;
 }
 
-#eraser:hover {
-  background-color: grey;
-}
 
 #erase-all {
   background-color: transparent;
@@ -128,6 +129,10 @@ h1, h2 {
 
 .chalk:hover {
   border-color: white;
+}
+
+#white:hover, #eraser:hover , #erase-all:hover {
+  border-color: grey;
 }
 
 #information-wrapper {
