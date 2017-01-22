@@ -6,7 +6,7 @@ var eraser;
 var eraseAll;
 var eraseOn = false;
 
-var colorChalk = ["#DC4266", "#EB9554", "#D5C561", "#86C0AB", "#5BADD8", "#8191C9", "#FFFFFF"]
+var colorChalk = ["#DC4266", "#EB9554", "#dbc115", "#86C0AB", "#5BADD8", "#8191C9", "#FFFFFF"]
 
 
 
@@ -48,24 +48,8 @@ function setup() {
   eraseAll.mousePressed(cleanAll);
 }
 
-function draw() {
-}
-
-function mouseDragged() {
-  if ((mouseX > palettesize * 2.5) && (mouseIsPressed)) {
-    if (!eraseOn) {
-      strokeWeight(4)
-      line(mouseX, mouseY, pmouseX, pmouseY);
-    } else {
-      fill(0, 0, 0, 100);
-      noStroke();
-      ellipse(mouseX, mouseY, 100, 100);
-    }
-  }
-}
 
 function touchMoved() {
-  // if ((mouseX > palettesize * 2.5) && (mouseIsPressed)) {
     if (!eraseOn) {
       strokeWeight(4)
       line(mouseX, mouseY, pmouseX, pmouseY);
@@ -76,7 +60,6 @@ function touchMoved() {
       ellipse(mouseX, mouseY, 100, 100);
       return false;
     }
-  // }
 }
 
 function whiteColor() {
